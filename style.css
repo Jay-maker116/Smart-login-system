@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background:linear-gradient(135deg,rgb(21, 206, 216),rgb(172, 9, 172));
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+.container{
+    width:360px;
+    height:230px;
+    box-shadow:0 0  12px black;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border-radius:20px;
+    animation: pop 0.7s ease;
+}
+.login-form h1{
+   color:#eee;
+    -webkit-animation: h3Pulse 1.6s ease-in-out infinite both;
+    animation: h3Pulse 1.6s ease-in-out infinite both;
+}
+.input-box{
+    margin:15px 0px;
+    position:relative
+}
+.input-box input{
+    width:230px;
+    height:30px;
+    border-radius:12px;
+    border:none;
+    padding:10px;
+    background:#eee;
+}
+button{
+    width:120px;
+    height:25px;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+    font-size:15px;
+    border-radius:10px;
+    border:none;
+    cursor:pointer;
+    transition:0.5s
+}
+button:hover{
+    background:purple;
+    color:#eee;
+
+}
+
+p{
+    color:#eee;
+    margin-top:10px;
+}
+a{
+   color:#eee 
+}
+.placeholder{
+  border:none;
+}
+@keyframes pop{
+    0%{
+        transform: scale(0.20);
+        opacity: 1;
+    }
+}
+@keyframes h3Pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: scale(1.06);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.97);
+    opacity: 0.95;
+  }
+  75% {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
